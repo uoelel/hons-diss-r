@@ -1,0 +1,20 @@
+project:
+  type: website
+  execute-dir: project
+  output-dir: docs
+
+website:
+  title: "hons-diss-r"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    theme: lumen
+    css: styles.css
+    toc: true
+
+
+
