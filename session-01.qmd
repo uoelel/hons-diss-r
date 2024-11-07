@@ -1,0 +1,8 @@
+---
+title: "Session 1"
+author: "Stefano Coretta"
+---
+
+## Slides
+
+You can find the slides of Session 1 here.

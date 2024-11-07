@@ -5,5 +5,19 @@
     "title": "hons-diss-r",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "slides/session-01.html#overview",
+    "href": "slides/session-01.html#overview",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "Overview",
+    "text": "Overview\n\nWhy\n\nQuantitative data analysis in linguistics is increasingly requiring more sophisticated techniques.\nSoftware used in the past (Excel, SPSS) is no longer sufficient.\n\n\n\n\nWhat\n\nYou will learn the basics of R.\nThis is not a crash course in statistics."
+  },
+  {
+    "objectID": "slides/session-01.html#why",
+    "href": "slides/session-01.html#why",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "Why",
+    "text": "Why\n\nQuantitative data analysis in linguistics is increasingly requiring more sophisticated techniques."
   }
 ]

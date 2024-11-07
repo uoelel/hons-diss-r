@@ -1,0 +1,38 @@
+---
+title: "R for Honours Dissertations in LEL"
+subtitle: "Session 1"
+author: "Stefano Coretta"
+format: mono-light-revealjs
+filters: 
+  - tachyonsextra
+---
+
+## Overview
+
+::: box-note
+**Why**
+
+- Quantitative data analysis in linguistics is increasingly requiring more sophisticated techniques.
+
+- Software used in the past (Excel, SPSS) is no longer sufficient.
+:::
+
+. . .
+
+::: box-tip
+**What**
+
+- You will learn the basics of R.
+
+- This is not a crash course in statistics.
+:::
+
+## R and RStudio
+
+## Programming: variables
+
+## Programming: functions
+
+## Files and file paths
+
+## Reading data in R
