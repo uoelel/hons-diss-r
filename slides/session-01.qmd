@@ -5,6 +5,8 @@ author: "Stefano Coretta"
 format: mono-light-revealjs
 filters: 
   - tachyonsextra
+execute: 
+  echo: true
 ---
 
 ## Overview
@@ -12,9 +14,9 @@ filters:
 ::: box-note
 **Why**
 
-- Quantitative data analysis in linguistics is increasingly requiring more sophisticated techniques.
+-   Quantitative data analysis in linguistics is increasingly requiring more sophisticated techniques.
 
-- Software used in the past (Excel, SPSS) is no longer sufficient.
+-   Software used in the past (Excel, SPSS) is no longer sufficient.
 :::
 
 . . .
@@ -22,17 +24,110 @@ filters:
 ::: box-tip
 **What**
 
-- You will learn the basics of R.
+-   You will learn the basics of R.
 
-- This is not a crash course in statistics.
+-   This is not a crash course in statistics.
 :::
 
-## R and RStudio
+## What is R?
+
+![](/img/what-r-for.png){fig-align="center"}
+
+## An inclusive community
+
+![](/img/inclusive-community.png){fig-align="center"}
+
+## R vs RStudio
+
+![](/img/R_vs_RStudio_1.png){fig-align="center"}
 
 ## Programming: variables
 
+::: box-tip
+A (programming) **variable** assigns a value to a name.
+:::
+
+. . .
+
+<br>
+
+```{r}
+age <- 36
+name <- "Stefano"
+```
+
+. . .
+
+```{r}
+age
+```
+
+. . .
+
+```{r}
+age <- 82
+age
+```
+
+
 ## Programming: functions
+
+::: box-tip
+A **function** runs an operation on one or more specified **arguments**.
+
+A function in R has the form `function()` where:
+
+-   `function` is the name of the function, like `sum`.
+-   `()` are round parentheses, inside of which you write arguments, separated by commas.
+:::
+
+. . .
+
+<br>
+
+```{r}
+sum(3, 3)
+
+beans <- c(5, 10)
+mean(beans)
+```
 
 ## Files and file paths
 
+::: box-tip
+**File paths** are strings of text that indicate where a file is saved on the hard disk of your computer.
+
+**Folders** (aka directories) are separated by a slash (`/`) in file paths.
+:::
+
+. . . 
+
+<br>
+
+```
+/ste/Documents/dissertation/data/questionnaire.csv
+```
+
 ## Reading data in R
+
+::: box-tip
+**Relative file paths** are paths that are relative to a working directory.
+:::
+
+. . .
+
+<br>
+
+``` r
+questionnaire <- read_csv("./data/questionnaire.csv")
+```
+
+## Tutorial
+
+::: box-warning
+- Form small groups (2-3 students) with students sitting next to you.
+
+- Go to XXX and work together on the "Session 1" tutorial.
+
+- Ask Stefano for help!
+:::

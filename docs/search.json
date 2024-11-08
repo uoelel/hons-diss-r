@@ -19,5 +19,68 @@
     "title": "R for Honours Dissertations in LEL",
     "section": "Why",
     "text": "Why\n\nQuantitative data analysis in linguistics is increasingly requiring more sophisticated techniques."
+  },
+  {
+    "objectID": "slides/session-01.html#what-is-r",
+    "href": "slides/session-01.html#what-is-r",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "What is R?",
+    "text": "What is R?"
+  },
+  {
+    "objectID": "slides/session-01.html#r-and-rstudio",
+    "href": "slides/session-01.html#r-and-rstudio",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "R and RStudio",
+    "text": "R and RStudio"
+  },
+  {
+    "objectID": "slides/session-01.html#programming-variables",
+    "href": "slides/session-01.html#programming-variables",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "Programming: variables",
+    "text": "Programming: variables\n\nA (programming) variable assigns a value to a name.\n\n\n\n\nage &lt;- 36\nname &lt;- \"Stefano\"\n\n\n\n\nage\n\n[1] 36\n\n\n\n\n\nage &lt;- 82\nage\n\n[1] 82"
+  },
+  {
+    "objectID": "slides/session-01.html#programming-functions",
+    "href": "slides/session-01.html#programming-functions",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "Programming: functions",
+    "text": "Programming: functions\n\nA function runs an operation on one or more specified arguments.\nA function in R has the form function() where:\n\nfunction is the name of the function, like sum.\n() are round parentheses, inside of which you write arguments, separated by commas.\n\n\n\n\n\nsum(3, 3)\n\n[1] 6\n\nbeans &lt;- c(5, 10)\nmean(beans)\n\n[1] 7.5"
+  },
+  {
+    "objectID": "slides/session-01.html#files-and-file-paths",
+    "href": "slides/session-01.html#files-and-file-paths",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "Files and file paths",
+    "text": "Files and file paths\n\nFile paths are strings of text that indicate where a file is saved on the hard disk of your computer.\nFolders (aka directories) are separated by a slash (/) in file paths.\n\n\n\n/ste/Documents/dissertation/data/questionnaire.csv"
+  },
+  {
+    "objectID": "slides/session-01.html#reading-data-in-r",
+    "href": "slides/session-01.html#reading-data-in-r",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "Reading data in R",
+    "text": "Reading data in R\n\nRelative file paths are paths that are relative to a working directory.\n\n\n\nquestionnaire &lt;- read_csv(\"./data/questionnaire.csv\")"
+  },
+  {
+    "objectID": "slides/session-01.html#an-inclusive-community",
+    "href": "slides/session-01.html#an-inclusive-community",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "An inclusive community",
+    "text": "An inclusive community"
+  },
+  {
+    "objectID": "slides/session-01.html#r-vs-rstudio",
+    "href": "slides/session-01.html#r-vs-rstudio",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "R vs RStudio",
+    "text": "R vs RStudio"
+  },
+  {
+    "objectID": "slides/session-01.html#tutorial",
+    "href": "slides/session-01.html#tutorial",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "Tutorial",
+    "text": "Tutorial\n\n\nForm small groups (2-3 students) with students sitting next to you.\nGo to XXX and work together on the “Session 1” tutorial.\nAsk Stefano for help!"
   }
 ]
