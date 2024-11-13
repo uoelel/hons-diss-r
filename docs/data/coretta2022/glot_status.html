@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Stefano Coretta, Harald Hammarström, Robert Forkel, Martin Haspelmath, Sebastian Bank">
 
-<title>R for Honours Dissertations in LEL – R for LEL Diss</title>
+<title>Glottolog 4.6 data: Agglomerated Endangerment Status – R for LEL Diss</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">R for LEL Diss</span>
     </a>
   </div>
@@ -89,11 +90,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./session-01.html"> 
+    <a class="nav-link" href="../../session-01.html"> 
 <span class="menu-text">Session 01</span></a>
   </li>  
 </ul>
@@ -107,24 +108,44 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#description" id="toc-description" class="nav-link active" data-scroll-target="#description">Description</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R for Honours Dissertations in LEL</h1>
+<h1 class="title">Glottolog 4.6 data: Agglomerated Endangerment Status</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Stefano Coretta, Harald Hammarström, Robert Forkel, Martin Haspelmath, Sebastian Bank </p>
+          </div>
+  </div>
     
   
     
+    <div>
+    <div class="quarto-title-meta-heading">Doi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://doi.org/10.1017/S0025100322000044">10.1017/S0025100322000044</a>
+      </p>
+    </div>
+  </div>
   </div>
   
 
@@ -132,9 +153,85 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This website has all the materials for the workshop <em>R for Honours Dissertations in LEL</em>.</p>
+<section id="description" class="level2">
+<h2 class="anchored" data-anchor-id="description">Description</h2>
+<dl>
+<dt><code>ID</code></dt>
+<dd>
+<p>Primary key.</p>
+</dd>
+<dt><code>Language_ID</code></dt>
+<dd>
+<p>Reference to <code>languages$ID</code>.</p>
+</dd>
+<dt><code>Parameter_ID</code></dt>
+<dd>
+<p>Parameter ID.</p>
+</dd>
+<dt><code>Value</code></dt>
+<dd>
+<p>Parameter value.</p>
+</dd>
+<dt><code>Code_ID</code></dt>
+<dd>
+<p>Code ID.</p>
+</dd>
+<dt><code>Comment</code></dt>
+<dd>
+<p>Comment.</p>
+</dd>
+<dt><code>Source</code></dt>
+<dd>
+<p>Source reference.</p>
+</dd>
+<dt><code>codeReference</code></dt>
+<dd>
+
+</dd>
+<dt><code>status</code></dt>
+<dd>
+<p>Agglomerate Endangerment Status.</p>
+</dd>
+<dt><code>Name</code></dt>
+<dd>
+<p>Name of the language.</p>
+</dd>
+<dt><code>Macroarea</code></dt>
+<dd>
+<p>Geographic macro-area.</p>
+</dd>
+<dt><code>Latitude</code></dt>
+<dd>
+<p>Latitude.</p>
+</dd>
+<dt><code>Longitude</code></dt>
+<dd>
+<p>Longitude.</p>
+</dd>
+<dt><code>Glottocode</code></dt>
+<dd>
+<p>Glottocode.</p>
+</dd>
+<dt><code>ISO639P3code</code></dt>
+<dd>
+<p>ISO639-3 code.</p>
+</dd>
+<dt><code>Countries</code></dt>
+<dd>
+<p>Countries where the language is spoken.</p>
+</dd>
+<dt><code>Family_ID</code></dt>
+<dd>
+<p>Family ID.</p>
+</dd>
+<dt><code>Language_ID.y</code></dt>
+<dd>
+<p>Language ID.</p>
+</dd>
+</dl>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

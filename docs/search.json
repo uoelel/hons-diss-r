@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "hons-diss-r",
+    "objectID": "data/coretta2022/glot_status.html",
+    "href": "data/coretta2022/glot_status.html",
+    "title": "Glottolog 4.6 data: Agglomerated Endangerment Status",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "ID\n\nPrimary key.\n\nLanguage_ID\n\nReference to languages$ID.\n\nParameter_ID\n\nParameter ID.\n\nValue\n\nParameter value.\n\nCode_ID\n\nCode ID.\n\nComment\n\nComment.\n\nSource\n\nSource reference.\n\ncodeReference\n\n\n\nstatus\n\nAgglomerate Endangerment Status.\n\nName\n\nName of the language.\n\nMacroarea\n\nGeographic macro-area.\n\nLatitude\n\nLatitude.\n\nLongitude\n\nLongitude.\n\nGlottocode\n\nGlottocode.\n\nISO639P3code\n\nISO639-3 code.\n\nCountries\n\nCountries where the language is spoken.\n\nFamily_ID\n\nFamily ID.\n\nLanguage_ID.y\n\nLanguage ID."
+  },
+  {
+    "objectID": "data/coretta2022/glot_status.html#description",
+    "href": "data/coretta2022/glot_status.html#description",
+    "title": "Glottolog 4.6 data: Agglomerated Endangerment Status",
+    "section": "",
+    "text": "ID\n\nPrimary key.\n\nLanguage_ID\n\nReference to languages$ID.\n\nParameter_ID\n\nParameter ID.\n\nValue\n\nParameter value.\n\nCode_ID\n\nCode ID.\n\nComment\n\nComment.\n\nSource\n\nSource reference.\n\ncodeReference\n\n\n\nstatus\n\nAgglomerate Endangerment Status.\n\nName\n\nName of the language.\n\nMacroarea\n\nGeographic macro-area.\n\nLatitude\n\nLatitude.\n\nLongitude\n\nLongitude.\n\nGlottocode\n\nGlottocode.\n\nISO639P3code\n\nISO639-3 code.\n\nCountries\n\nCountries where the language is spoken.\n\nFamily_ID\n\nFamily ID.\n\nLanguage_ID.y\n\nLanguage ID."
   },
   {
     "objectID": "slides/session-01.html#overview",
@@ -14,13 +21,6 @@
     "text": "Overview\n\nWhy\n\nQuantitative data analysis in linguistics is increasingly requiring more sophisticated techniques.\nSoftware used in the past (Excel, SPSS) is no longer sufficient.\n\n\n\n\nWhat\n\nYou will learn the basics of R.\nThis is not a crash course in statistics."
   },
   {
-    "objectID": "slides/session-01.html#why",
-    "href": "slides/session-01.html#why",
-    "title": "R for Honours Dissertations in LEL",
-    "section": "Why",
-    "text": "Why\n\nQuantitative data analysis in linguistics is increasingly requiring more sophisticated techniques."
-  },
-  {
     "objectID": "slides/session-01.html#what-is-r",
     "href": "slides/session-01.html#what-is-r",
     "title": "R for Honours Dissertations in LEL",
@@ -28,11 +28,18 @@
     "text": "What is R?"
   },
   {
-    "objectID": "slides/session-01.html#r-and-rstudio",
-    "href": "slides/session-01.html#r-and-rstudio",
+    "objectID": "slides/session-01.html#an-inclusive-community",
+    "href": "slides/session-01.html#an-inclusive-community",
     "title": "R for Honours Dissertations in LEL",
-    "section": "R and RStudio",
-    "text": "R and RStudio"
+    "section": "An inclusive community",
+    "text": "An inclusive community"
+  },
+  {
+    "objectID": "slides/session-01.html#r-vs-rstudio",
+    "href": "slides/session-01.html#r-vs-rstudio",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "R vs RStudio",
+    "text": "R vs RStudio"
   },
   {
     "objectID": "slides/session-01.html#programming-variables",
@@ -63,24 +70,73 @@
     "text": "Reading data in R\n\nRelative file paths are paths that are relative to a working directory.\n\n\n\nquestionnaire &lt;- read_csv(\"./data/questionnaire.csv\")"
   },
   {
-    "objectID": "slides/session-01.html#an-inclusive-community",
-    "href": "slides/session-01.html#an-inclusive-community",
-    "title": "R for Honours Dissertations in LEL",
-    "section": "An inclusive community",
-    "text": "An inclusive community"
-  },
-  {
-    "objectID": "slides/session-01.html#r-vs-rstudio",
-    "href": "slides/session-01.html#r-vs-rstudio",
-    "title": "R for Honours Dissertations in LEL",
-    "section": "R vs RStudio",
-    "text": "R vs RStudio"
-  },
-  {
     "objectID": "slides/session-01.html#tutorial",
     "href": "slides/session-01.html#tutorial",
     "title": "R for Honours Dissertations in LEL",
     "section": "Tutorial",
-    "text": "Tutorial\n\n\nForm small groups (2-3 students) with students sitting next to you.\nGo to XXX and work together on the “Session 1” tutorial.\nAsk Stefano for help!"
+    "text": "Tutorial\n\n\nForm small groups (2-3 students) with students sitting next to you.\nGo to https://uoelel.github.io/hons-diss-r/ and work together on the “Session 1” tutorial.\nAsk Stefano for help!\n(Demo)"
+  },
+  {
+    "objectID": "session-01.html",
+    "href": "session-01.html",
+    "title": "Session 1",
+    "section": "",
+    "text": "You can find the slides of Session 1 here."
+  },
+  {
+    "objectID": "session-01.html#slides",
+    "href": "session-01.html#slides",
+    "title": "Session 1",
+    "section": "",
+    "text": "You can find the slides of Session 1 here."
+  },
+  {
+    "objectID": "session-01.html#launching-rstudior-from-learn",
+    "href": "session-01.html#launching-rstudior-from-learn",
+    "title": "Session 1",
+    "section": "Launching RStudio/R from Learn",
+    "text": "Launching RStudio/R from Learn\n\n\n\n\n\n\nInstructions\n\n\n\n\nGo to Learn &gt; Dissertation in Language Sciences\nClick on “Noteable LTI 1.3”.\nUnder “Please select a personal notebook” make sure “RStudio” is selected.\nClick “Start”.\n\n\n\nIf you follow the instructions correctly, RStudio running R should open in your browser and look like this.\n\n\n\n\n\nRStudio and R are not the same thing. The “engine” that reads, plots, analyses data is R and you do that through RStudio.\n\n\n\n\n\n\nR\n\n\n\n\nR is a programming language.\nWe use programming languages to interact with computers.\nYou run commands written in a console and the related task is executed.\n\n\n\n\n\n\n\n\n\nRStudio\n\n\n\n\nRStudio is an Integrated Development Environment or IDE.\nIt helps you using R more efficiently.\nIt has a graphical user interface or GUI."
+  },
+  {
+    "objectID": "session-01.html#rstudio-overview",
+    "href": "session-01.html#rstudio-overview",
+    "title": "Session 1",
+    "section": "RStudio overview",
+    "text": "RStudio overview\nWhen you open RStudio, you can see the window is divided into 3 panels (see figure below, note there might be differences in colour/layout):\n\nBlue (left): the Console.\nGreen (top-right): the Environment tab. This panel is collapsed when you open RStudio but if you click on Environment it will expand.\nPurple (bottom-right): the Files tab.\n\n\n\n\n\n\nThe Console is where R commands can be executed. Think of this as the interface to R.\nThe Environment tab lists the objects created with R, while in the Files tab you can navigate to folders to get to files and open them in the file Editor."
+  },
+  {
+    "objectID": "session-01.html#uploading-files-to-the-noteable-server",
+    "href": "session-01.html#uploading-files-to-the-noteable-server",
+    "title": "Session 1",
+    "section": "Uploading files to the Noteable server",
+    "text": "Uploading files to the Noteable server\nRStudio in your browser runs on a Noteable server. You can upload files to the server through RStudio to be able to read them in R and process them further.\nIn this tutorial, we will use data from Brentari et al 2024. This study looked at the organization of verb meaning in Lengua de Señas Nicaragüense (LSN). Here’s the abstract (feel free to check out the paper if you would like to know more about the study).\n\nOne structural dimension that varies across languages is the simultaneous or sequential expression of meaning. Complex predicates can layer meanings together simultaneously in a single-verb predicate (SVP) or distribute them sequentially in a multiple-verb predicate (MVP). We ask whether typological variability in this dimension might be a consequence of systematic patterns of diachronic change. We examine the distribution of markers of agency and number within the verb phrase (the predicate) in the earliest stages of a young, emerging sign language in Nicaragua, Lengua de Señas Nicaragüense (LSN), beginning with homesign systems like those from which LSN originated, and progressing through two decades of transmission to new learners. We find that: (i) LSN2 signers are more likely to produce MVPs than homesigners or LSN1 signers; (ii) in the MVPs they do produce, homesigners and LSN1 signers are more likely to produce predicates that mark both agency and number simultaneously on at least one of the verbs; LSN2 signers are just as likely to produce sequences with verbs that mark agency and number in sequentially separate verbs. We discuss how language acquisition, modality, and structure, as well as specific social factors associated with each of the groups, play a role in driving these changes, and how, over time, these patterns of change might yield the diversity of forms observed across spoken and signed languages today.\n\n\n\n\n\n\n\nInstructions\n\n\n\n\nFirst, download the ZIP archive containing the data to be uploaded (the ZIP also has other data you will use later). You can download the ZIP archive by clicking on this link.\nNow go to RStudio and in the Files panel click on “Upload”. Navigate to where the ZIP folder is on your computer and upload it.\nYou should then see a data/ folder in your Files panel."
+  },
+  {
+    "objectID": "session-01.html#read-data-in-r",
+    "href": "session-01.html#read-data-in-r",
+    "title": "Session 1",
+    "section": "Read data in R",
+    "text": "Read data in R\nSince RStudio and R are two different things, uploading data to the server is not sufficient. We need to tell R to read the data and where to find it.\nBefore we can read the data, we need to attach the tidyverse packages. These are packages that provide R with extra functionality, among which reading data. You can learn more about packages after the workshop by reading this entry: R packages.\nWe will be writing R code to read and plot the data. The simplest way to do this is to type code in the Console and press ENTER, but instead we will write code in an R script and run code from the R script.\n\n\n\n\n\n\nInstructions\n\n\n\n\nClick on File &gt; New File &gt; R Script.\nA new R script file is opened in the Editor. Now click on File &gt; Save. Give the file the name tutorial-01 and save it.\nAt the top of the script, write the following code:\n\nlibrary(tidyverse)\n\nPut the cursor on the line with the code and click on “Run”.\n\n\n\nThe library(tidyverse) code will attach the necessary packages. Now we can finally read the data in R.\n\n\n\n\n\n\nInstructions\n\n\n\n\nOn a new line in the script, write the following code:\n\nverb_org &lt;- read_csv(\"data/brentari2024/verb_org.csv\")\n\nRun the code as you did earlier.\nNow in the Environment tab you should see listed verb_org. Click on the name of the data to open it in the Viewer."
+  },
+  {
+    "objectID": "session-01.html#obtain-counts-from-the-data",
+    "href": "session-01.html#obtain-counts-from-the-data",
+    "title": "Session 1",
+    "section": "Obtain counts from the data",
+    "text": "Obtain counts from the data\nA very common step in quantitative data analysis is to get counts for different things in the data.\nThe most basic count is just how many observations there are in the data: this count is simply the number of rows in the data. You can see the number of rows next to the data name in the Environment tab: they are called “observations”. The verb_org data has 630 observations.\nThere is also R code that can return the number of rows/observations. This is the count() function.\n\n\n\n\n\n\nInstructions\n\n\n\n\nAdd the following code to the script.\n\ncount(verb_org)\n\nRun the code\n\n\n\nHere is the code again, with the output you will see in the Console after you run the code.\n\ncount(verb_org)\n\n# A tibble: 1 × 1\n      n\n  &lt;int&gt;\n1   630\n\n\nThe number printed in the console is 630, the number of rows in the data.\nThe count() function simply counts the number of rows in the data you specify within parenthesis. Here, we put verb_org so the function simply returns the number of rows in that data.\nBut count() is not limited to that. It can also count the number of rows depending on values in columns in the data. For example, we can count the number of rows depending on the Group column.\nThis column has three possible values: homesign (for signers that learnt signing at home), NSL1 (for fist-generation signers that learnt from homesigners) and NSL2 (for second-generation signers that learnt from first-generation signers).\nTo obtain the number of rows in the data based on Group you can simply specify the Group coloumn, like so:\n\n# Note the comma\ncount(verb_org, Group)\n\n# A tibble: 3 × 2\n  Group        n\n  &lt;chr&gt;    &lt;int&gt;\n1 NSL1       237\n2 NSL2       208\n3 homesign   185\n\n\nA table is printed, with two columns:\n\nGroup with the group value.\nn with the number of rows for each group.\n\nWhat if we want to know the number of rows per participants? There is catch with this data: the column Participant contains participant IDs, but alas the authors re-used IDs across groups. So there is a participant 1 for homesigners, NSL-1 and NSL-2.\nTo be able to count the rows per actual participants, we need to specify both the Group column and the Participant column, like so:\n\ncount(verb_org, Group, Participant)\n\n# A tibble: 12 × 3\n   Group    Participant     n\n   &lt;chr&gt;          &lt;dbl&gt; &lt;int&gt;\n 1 NSL1               1    50\n 2 NSL1               2    62\n 3 NSL1               3    63\n 4 NSL1               4    62\n 5 NSL2               1    47\n 6 NSL2               2    45\n 7 NSL2               3    54\n 8 NSL2               4    62\n 9 homesign           1    35\n10 homesign           2    32\n11 homesign           3    57\n12 homesign           4    61\n\n\nYou can see that there are four participants in each group (participant 1, 2, 3, 4). Some participants have more observations than others.\nNow try it yourself, write code to get the number of rows within each group depending on the value of Num_Predicates. This column has two values: single for single predicate, and multiple for multiple predicates.\n\n\n\n\n\n\nHint\n\n\n\n\n\nYou should list both columns in the count() function, separated by a comma.\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\nAre you sure you have tried it yourself firt?\n\n\n\n\n\n\nYes, show me!\n\n\n\n\n\n\ncount(verb_org, Group, Num_Predicates)\n\n# A tibble: 6 × 3\n  Group    Num_Predicates     n\n  &lt;chr&gt;    &lt;chr&gt;          &lt;int&gt;\n1 NSL1     multiple          45\n2 NSL1     single           192\n3 NSL2     multiple         103\n4 NSL2     single           105\n5 homesign multiple          67\n6 homesign single           118\n\n\n\n\n\n\n\n\nSo these are the count of observations by number of predicates for each group.\n\n\n# A tibble: 6 × 3\n  Group    Num_Predicates     n\n  &lt;chr&gt;    &lt;chr&gt;          &lt;int&gt;\n1 NSL1     multiple          45\n2 NSL1     single           192\n3 NSL2     multiple         103\n4 NSL2     single           105\n5 homesign multiple          67\n6 homesign single           118\n\n\nIt is interesting to note that homesigners have a higher number of single predicates cases than multiple predicate cases (118 vs 67). The difference between single and multiple predicates increases in NSL-1 signers (192 vs 45), but it drops again in NSL-2 signers, where it is basically 50-50 (105 vs 103)!\nCounting is a powerful statistical tool and R makes it so easy!"
+  },
+  {
+    "objectID": "session-01.html#next-time",
+    "href": "session-01.html#next-time",
+    "title": "Session 1",
+    "section": "Next time…",
+    "text": "Next time…\nIn the next tutorial, you will learn how to plot data. You will also practice what you have learnt using new data on the endangerment status of the languages of the world!\nFeel free to practice more in your own time before we meet again next week."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R for Honours Dissertations in LEL",
+    "section": "",
+    "text": "This website has all the materials for the workshop R for Honours Dissertations in LEL."
   }
 ]

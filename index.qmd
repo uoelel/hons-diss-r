@@ -1,7 +1,5 @@
 ---
-title: "hons-diss-r"
+title: "R for Honours Dissertations in LEL"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This website has all the materials for the workshop *R for Honours Dissertations in LEL*.

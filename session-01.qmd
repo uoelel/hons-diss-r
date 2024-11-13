@@ -1,8 +1,240 @@
 ---
 title: "Session 1"
 author: "Stefano Coretta"
+execute: 
+  echo: true
 ---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+```
+
+```{r}
+#| label: read-data
+#| include: false
+
+verb_org <- read_csv("data/brentari2024/verb_org.csv")
+```
+
 
 ## Slides
 
-You can find the slides of Session 1 here.
+You can find the slides of Session 1 [here](slides/session-01.qmd).
+
+## Launching RStudio/R from Learn
+
+::: callout-tip
+### Instructions
+
+1.  Go to Learn \> Dissertation in Language Sciences
+2.  Click on "Noteable LTI 1.3".
+3.  Under "Please select a personal notebook" make sure "RStudio" is selected.
+4.  Click "Start".
+:::
+
+If you follow the instructions correctly, RStudio running R should open in your browser and look like this.
+
+![](img/noteable-rstudio.png){fig-align="center" width="700"}
+
+RStudio and R are not the same thing. The "engine" that reads, plots, analyses data is R and you do that through RStudio.
+
+::: callout-note
+### R
+
+-   R is a **programming language**.
+
+-   We use programming languages to **interact** with computers.
+
+-   You run **commands** written in a **console** and the related task is **executed**.
+:::
+
+::: callout-note
+### RStudio
+
+-   RStudio is an Integrated Development Environment or **IDE**.
+
+-   It helps you using R more **efficiently**.
+
+-   It has a **graphical user interface** or GUI.
+:::
+
+## RStudio overview
+
+When you open RStudio, you can see the window is divided into 3 panels (see figure below, note there might be differences in colour/layout):
+
+-   Blue (left): the **Console**.
+
+-   Green (top-right): the **Environment tab**. This panel is collapsed when you open RStudio but if you click on `Environment` it will expand.
+
+-   Purple (bottom-right): the **Files tab**.
+
+![](img/rstudio-1-2.png){fig-align="center" width="700"}
+
+The **Console** is where R commands can be executed. Think of this as the interface to R.
+
+The **Environment tab** lists the objects created with R, while in the **Files tab** you can navigate to folders to get to files and open them in the file Editor.
+
+## Uploading files to the Noteable server
+
+RStudio in your browser runs on a Noteable server. You can upload files to the server through RStudio to be able to read them in R and process them further.
+
+In this tutorial, we will use data from [Brentari et al 2024](https://doi.org/10.16995/glossa.10342). This study looked at the organization of verb meaning in Lengua de Señas Nicaragüense (LSN). Here's the abstract (feel free to check out the paper if you would like to know more about the study).
+
+> One structural dimension that varies across languages is the simultaneous or sequential expression of meaning. Complex predicates can layer meanings together simultaneously in a single-verb predicate (SVP) or distribute them sequentially in a multiple-verb predicate (MVP). We ask whether typological variability in this dimension might be a consequence of systematic patterns of diachronic change. We examine the distribution of markers of agency and number within the verb phrase (the predicate) in the earliest stages of a young, emerging sign language in Nicaragua, Lengua de Señas Nicaragüense (LSN), beginning with homesign systems like those from which LSN originated, and progressing through two decades of transmission to new learners. We find that: (i) LSN2 signers are more likely to produce MVPs than homesigners or LSN1 signers; (ii) in the MVPs they do produce, homesigners and LSN1 signers are more likely to produce predicates that mark both agency and number *simultaneously* on at least one of the verbs; LSN2 signers are just as likely to produce sequences with verbs that mark agency and number in *sequentially* separate verbs. We discuss how language acquisition, modality, and structure, as well as specific social factors associated with each of the groups, play a role in driving these changes, and how, over time, these patterns of change might yield the diversity of forms observed across spoken and signed languages today.
+
+::: callout-tip
+### Instructions
+
+1. First, download the ZIP archive containing the data to be uploaded (the ZIP also has other data you will use later). You can download the ZIP archive by clicking on [this link](data.zip).
+
+2. Now go to RStudio and in the Files panel click on "Upload". Navigate to where the ZIP folder is on your computer and upload it.
+
+3. You should then see a `data/` folder in your Files panel.
+:::
+
+## Read data in R
+
+Since RStudio and R are two different things, uploading data to the server is not sufficient. We need to tell R to read the data and where to find it.
+
+Before we can read the data, we need to attach the tidyverse packages. These are packages that provide R with extra functionality, among which reading data. You can learn more about packages after the workshop by reading this entry: [R packages](<https://uoelel.github.io/qml/posts/packages.html>).
+
+We will be writing R code to read and plot the data. The simplest way to do this is to type code in the Console and press ENTER, but instead we will write code in an R script and run code from the R script.
+
+::: callout-tip
+### Instructions
+
+1. Click on File > New File > R Script.
+
+2. A new R script file is opened in the Editor. Now click on File > Save. Give the file the name `tutorial-01` and save it.
+
+3. At the top of the script, write the following code:
+
+```r
+library(tidyverse)
+```
+
+4. Put the cursor on the line with the code and click on "Run".
+:::
+
+The `library(tidyverse)` code will attach the necessary packages. Now we can finally read the data in R.
+
+::: callout-tip
+### Instructions
+
+1. On a new line in the script, write the following code:
+
+```r
+verb_org <- read_csv("data/brentari2024/verb_org.csv")
+```
+
+2. Run the code as you did earlier.
+
+3. Now in the Environment tab you should see listed `verb_org`. Click on the name of the data to open it in the Viewer.
+:::
+
+## Obtain counts from the data
+
+A very common step in quantitative data analysis is to get counts for different things in the data.
+
+The most basic count is just how many observations there are in the data: this count is simply the number of rows in the data. You can see the number of rows next to the data name in the Environment tab: they are called "observations". The `verb_org` data has 630 observations.
+
+There is also R code that can return the number of rows/observations. This is the `count()` function.
+
+::: callout-tip
+### Instructions
+
+1. Add the following code to the script.
+
+```r
+count(verb_org)
+```
+
+2. Run the code
+:::
+
+Here is the code again, with the output you will see in the Console after you run the code.
+
+```{r}
+#| label: count
+
+count(verb_org)
+```
+
+The number printed in the console is 630, the number of rows in the data.
+
+The `count()` function simply counts the number of rows in the data you specify within parenthesis. Here, we put `verb_org` so the function simply returns the number of rows in that data.
+
+But `count()` is not limited to that. It can also count the number of rows depending on values in columns in the data. For example, we can count the number of rows depending on the `Group` column.
+
+This column has three possible values: `homesign` (for signers that learnt signing at home), `NSL1` (for fist-generation signers that learnt from homesigners) and `NSL2` (for second-generation signers that learnt from first-generation signers).
+
+To obtain the number of rows in the data based on `Group` you can simply specify the `Group` coloumn, like so:
+
+```{r}
+#| label: count-group
+
+# Note the comma
+count(verb_org, Group)
+```
+
+A table is printed, with two columns:
+
+- `Group` with the group value.
+- `n` with the number of rows for each group.
+
+What if we want to know the number of rows per participants? There is catch with this data: the column `Participant` contains participant IDs, but alas the authors re-used IDs across groups. So there is a participant `1` for homesigners, NSL-1 and NSL-2.
+
+To be able to count the rows per *actual* participants, we need to specify both the `Group` column and the `Participant` column, like so:
+
+```{r}
+#| label: count-group-part
+
+count(verb_org, Group, Participant)
+```
+
+You can see that there are four participants in each group (participant 1, 2, 3, 4). Some participants have more observations than others.
+
+Now try it yourself, write code to get the number of rows within each group depending on the value of `Num_Predicates`. This column has two values: `single` for single predicate, and `multiple` for multiple predicates.
+
+::: {.callout-tip collapse="true"}
+### Hint
+
+You should list both columns in the `count()` function, separated by a comma.
+:::
+
+::: {.callout-important collapse="true"}
+### Solution
+
+Are you sure you have tried it yourself firt?
+
+::: {.callout-important collapse="true"}
+### Yes, show me!
+
+```{r}
+count(verb_org, Group, Num_Predicates)
+```
+:::
+
+:::
+
+So these are the count of observations by number of predicates for each group.
+
+```{r}
+#| label: count-group-preds
+#| echo: false
+
+count(verb_org, Group, Num_Predicates)
+```
+
+It is interesting to note that homesigners have a higher number of single predicates cases than multiple predicate cases (118 vs 67). The difference between single and multiple predicates increases in NSL-1 signers (192 vs 45), but it drops again in NSL-2 signers, where it is basically 50-50 (105 vs 103)!
+
+Counting is a powerful statistical tool and R makes it so easy!
+
+## Next time...
+
+In the next tutorial, you will learn how to plot data. You will also practice what you have learnt using new data on the endangerment status of the languages of the world!
+
+Feel free to practice more in your own time before we meet again next week.

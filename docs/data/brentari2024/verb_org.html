@@ -6,8 +6,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Diane Brentari">
+<meta name="author" content="Susan Goldin-Meadow">
+<meta name="author" content="Laura Horton">
+<meta name="author" content="Ann Senghas">
+<meta name="author" content="Marie Coppola">
 
-<title>R for Honours Dissertations in LEL – R for LEL Diss</title>
+<title>The organization of verb meaning in Lengua de Señas Nicaragüense (LSN): Sequential or simultaneous structures? – R for LEL Diss</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +28,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">R for LEL Diss</span>
     </a>
   </div>
@@ -89,11 +94,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./session-01.html"> 
+    <a class="nav-link" href="../../session-01.html"> 
 <span class="menu-text">Session 01</span></a>
   </li>  
 </ul>
@@ -115,24 +120,47 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R for Honours Dissertations in LEL</h1>
+<h1 class="title">The organization of verb meaning in Lengua de Señas Nicaragüense (LSN): Sequential or simultaneous structures?</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Diane Brentari </p>
+             <p>Susan Goldin-Meadow </p>
+             <p>Laura Horton </p>
+             <p>Ann Senghas </p>
+             <p>Marie Coppola </p>
+          </div>
+  </div>
     
   
     
+    <div>
+    <div class="quarto-title-meta-heading">Doi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://doi.org/10.16995/glossa.10342">10.16995/glossa.10342</a>
+      </p>
+    </div>
+  </div>
   </div>
   
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    <p>One structural dimension that varies across languages is the simultaneous or sequential expression of meaning. Complex predicates can layer meanings together simultaneously in a single-verb predicate (SVP) or distribute them sequentially in a multiple-verb predicate (MVP). We ask whether typological variability in this dimension might be a consequence of systematic patterns of diachronic change. We examine the distribution of markers of agency and number within the verb phrase (the predicate) in the earliest stages of a young, emerging sign language in Nicaragua, Lengua de Señas Nicaragüense (LSN), beginning with homesign systems like those from which LSN originated, and progressing through two decades of transmission to new learners. We find that: (i) LSN2 signers are more likely to produce MVPs than homesigners or LSN1 signers; (ii) in the MVPs they do produce, homesigners and LSN1 signers are more likely to produce predicates that mark both agency and number simultaneously on at least one of the verbs; LSN2 signers are just as likely to produce sequences with verbs that mark agency and number in sequentially separate verbs. We discuss how language acquisition, modality, and structure, as well as specific social factors associated with each of the groups, play a role in driving these changes, and how, over time, these patterns of change might yield the diversity of forms observed across spoken and signed languages today.</p>
+  </div>
+</div>
 
 
 </header>
 
 
-<p>This website has all the materials for the workshop <em>R for Honours Dissertations in LEL</em>.</p>
 
 
 

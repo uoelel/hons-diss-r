@@ -2,19 +2,26 @@ project:
   type: website
   execute-dir: project
   output-dir: docs
+  resources:
+    - "data.zip"
+    - ".nojekyll"
 
 website:
-  title: "hons-diss-r"
+  title: "R for LEL Diss"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - href: session-01.qmd
+        text: Session 01
 
 format:
   html:
     theme: lumen
     css: styles.css
     toc: true
+
+callout-icon: false
 
 
 

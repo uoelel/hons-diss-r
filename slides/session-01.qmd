@@ -2,7 +2,9 @@
 title: "R for Honours Dissertations in LEL"
 subtitle: "Session 1"
 author: "Stefano Coretta"
-format: mono-light-revealjs
+format:
+  mono-light-revealjs:
+    history: false
 filters: 
   - tachyonsextra
 execute: 
@@ -127,7 +129,9 @@ questionnaire <- read_csv("./data/questionnaire.csv")
 ::: box-warning
 - Form small groups (2-3 students) with students sitting next to you.
 
-- Go to XXX and work together on the "Session 1" tutorial.
+- Go to <https://uoelel.github.io/hons-diss-r/> and work together on the "Session 1" tutorial.
 
 - Ask Stefano for help!
+
+- (Demo)
 :::
