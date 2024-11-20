@@ -8,7 +8,7 @@
 
 <meta name="author" content="Stefano Coretta">
 
-<title>Session 1 – R for LEL Diss</title>
+<title>Session 2 – R for LEL Diss</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -128,11 +128,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./session-01.html" aria-current="page"> 
+    <a class="nav-link" href="./session-01.html"> 
 <span class="menu-text">Session 01</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./session-02.html"> 
+    <a class="nav-link active" href="./session-02.html" aria-current="page"> 
 <span class="menu-text">Session 02</span></a>
   </li>  
 </ul>
@@ -151,13 +151,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#launching-rstudior-from-learn" id="toc-launching-rstudior-from-learn" class="nav-link" data-scroll-target="#launching-rstudior-from-learn">Launching RStudio/R from Learn</a></li>
-  <li><a href="#rstudio-overview" id="toc-rstudio-overview" class="nav-link" data-scroll-target="#rstudio-overview">RStudio overview</a></li>
-  <li><a href="#uploading-files-to-the-noteable-server" id="toc-uploading-files-to-the-noteable-server" class="nav-link" data-scroll-target="#uploading-files-to-the-noteable-server">Uploading files to the Noteable server</a></li>
-  <li><a href="#read-data-in-r" id="toc-read-data-in-r" class="nav-link" data-scroll-target="#read-data-in-r">Read data in R</a></li>
-  <li><a href="#obtain-counts-from-the-data" id="toc-obtain-counts-from-the-data" class="nav-link" data-scroll-target="#obtain-counts-from-the-data">Obtain counts from the data</a></li>
-  <li><a href="#next-time" id="toc-next-time" class="nav-link" data-scroll-target="#next-time">Next time…</a></li>
+  <li><a href="#recap-from-session-1" id="toc-recap-from-session-1" class="nav-link active" data-scroll-target="#recap-from-session-1">Recap from Session 1</a></li>
+  <li><a href="#plotting-data-in-r" id="toc-plotting-data-in-r" class="nav-link" data-scroll-target="#plotting-data-in-r">Plotting data in R</a></li>
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -166,7 +163,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Session 1</h1>
+<h1 class="title">Session 2</h1>
 </div>
 
 
@@ -189,243 +186,226 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="slides" class="level2">
-<h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<p>You can find the slides of Session 1 <a href="./slides/session-01.html">here</a>.</p>
-</section>
-<section id="launching-rstudior-from-learn" class="level2">
-<h2 class="anchored" data-anchor-id="launching-rstudior-from-learn">Launching RStudio/R from Learn</h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Instructions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Go to Learn &gt; Dissertation in Language Sciences</li>
-<li>Click on “Noteable LTI 1.3”.</li>
-<li>Under “Please select a personal notebook” make sure “RStudio” is selected.</li>
-<li>Click “Start”.</li>
-</ol>
-</div>
-</div>
-<p>If you follow the instructions correctly, RStudio running R should open in your browser and look like this.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/noteable-rstudio.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
-</figure>
-</div>
-<p>RStudio and R are not the same thing. The “engine” that reads, plots, analyses data is R and you do that through RStudio.</p>
+<section id="recap-from-session-1" class="level2">
+<h2 class="anchored" data-anchor-id="recap-from-session-1">Recap from Session 1</h2>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-R
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<p>Last week you learnt:</p>
 <ul>
-<li><p>R is a <strong>programming language</strong>.</p></li>
-<li><p>We use programming languages to <strong>interact</strong> with computers.</p></li>
-<li><p>You run <strong>commands</strong> written in a <strong>console</strong> and the related task is <strong>executed</strong>.</p></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-RStudio
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><p>RStudio is an Integrated Development Environment or <strong>IDE</strong>.</p></li>
-<li><p>It helps you using R more <strong>efficiently</strong>.</p></li>
-<li><p>It has a <strong>graphical user interface</strong> or GUI.</p></li>
+<li><p>How to open R and RStudio on the Noteable server from Learn.</p></li>
+<li><p>How to upload data to the server.</p></li>
+<li><p>How to read data into R.</p></li>
+<li><p>How to count observations based on specific groups.</p></li>
 </ul>
 </div>
 </div>
 </section>
-<section id="rstudio-overview" class="level2">
-<h2 class="anchored" data-anchor-id="rstudio-overview">RStudio overview</h2>
-<p>When you open RStudio, you can see the window is divided into 3 panels (see figure below, note there might be differences in colour/layout):</p>
-<ul>
-<li><p>Blue (left): the <strong>Console</strong>.</p></li>
-<li><p>Green (top-right): the <strong>Environment tab</strong>. This panel is collapsed when you open RStudio but if you click on <code>Environment</code> it will expand.</p></li>
-<li><p>Purple (bottom-right): the <strong>Files tab</strong>.</p></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
+<section id="plotting-data-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="plotting-data-in-r">Plotting data in R</h2>
+<p>This week you will learn how to create simple plots of the Brentari 2024 data you worked with last week. Then, you will practice what you learnt with a new data!</p>
+<p>The tidyverse package <a href="https://ggplot2.tidyverse.org">ggplot2</a> provides users with a consistent set of functions to create captivating graphics.</p>
+<p>Since ggplot2 is part of the tidyverse, when you attach the tidyverse with <code>library(tidyverse)</code>, the ggplot2 package is also attached, so you don’t have to attach it directly.</p>
+<p>Go to the script you created last time and re-run all the code to attach the tidyverse packages and read the data in R.</p>
+<p>Let’s create a simple plot with the number of observation per number of predicates (single vs multiple) in the three signers groups. We will build the plot one layer at a time so that you can understand what each line does (but note that normally you would just create the plot in one go). Here’s the final plot: this is known as a “bar chart”.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
 <figure class="figure">
-<p><img src="img/rstudio-1-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+<p><img src="session-02_files/figure-html/plot-finished-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
-<p>The <strong>Console</strong> is where R commands can be executed. Think of this as the interface to R.</p>
-<p>The <strong>Environment tab</strong> lists the objects created with R, while in the <strong>Files tab</strong> you can navigate to folders to get to files and open them in the file Editor.</p>
-</section>
-<section id="uploading-files-to-the-noteable-server" class="level2">
-<h2 class="anchored" data-anchor-id="uploading-files-to-the-noteable-server">Uploading files to the Noteable server</h2>
-<p>RStudio in your browser runs on a Noteable server. You can upload files to the server through RStudio to be able to read them in R and process them further.</p>
-<p>In this tutorial, we will use data from <a href="https://doi.org/10.16995/glossa.10342">Brentari et al 2024</a>. This study looked at the organization of verb meaning in Lengua de Señas Nicaragüense (LSN). Here’s the abstract (feel free to check out the paper if you would like to know more about the study).</p>
-<blockquote class="blockquote">
-<p>One structural dimension that varies across languages is the simultaneous or sequential expression of meaning. Complex predicates can layer meanings together simultaneously in a single-verb predicate (SVP) or distribute them sequentially in a multiple-verb predicate (MVP). We ask whether typological variability in this dimension might be a consequence of systematic patterns of diachronic change. We examine the distribution of markers of agency and number within the verb phrase (the predicate) in the earliest stages of a young, emerging sign language in Nicaragua, Lengua de Señas Nicaragüense (LSN), beginning with homesign systems like those from which LSN originated, and progressing through two decades of transmission to new learners. We find that: (i) LSN2 signers are more likely to produce MVPs than homesigners or LSN1 signers; (ii) in the MVPs they do produce, homesigners and LSN1 signers are more likely to produce predicates that mark both agency and number&nbsp;<em>simultaneously</em>&nbsp;on at least one of the verbs; LSN2 signers are just as likely to produce sequences with verbs that mark agency and number in&nbsp;<em>sequentially</em>&nbsp;separate verbs. We discuss how language acquisition, modality, and structure, as well as specific social factors associated with each of the groups, play a role in driving these changes, and how, over time, these patterns of change might yield the diversity of forms observed across spoken and signed languages today.</p>
-</blockquote>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Instructions
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li><p>First, download the ZIP archive containing the data to be uploaded (the ZIP also has other data you will use later). You can download the ZIP archive by clicking on <a href="data.zip">this link</a>.</p></li>
-<li><p>Now go to RStudio and in the Files panel click on “Upload”. Navigate to where the ZIP folder is on your computer and upload it.</p></li>
-<li><p>You should then see a <code>data/</code> folder in your Files panel.</p></li>
-</ol>
-</div>
-</div>
-</section>
-<section id="read-data-in-r" class="level2">
-<h2 class="anchored" data-anchor-id="read-data-in-r">Read data in R</h2>
-<p>Since RStudio and R are two different things, uploading data to the server is not sufficient. We need to tell R to read the data and where to find it.</p>
-<p>Before we can read the data, we need to attach the tidyverse packages. These are packages that provide R with extra functionality, among which reading data. You can learn more about packages after the workshop by reading this entry: <a href="https://uoelel.github.io/qml/posts/packages.html">R packages</a>.</p>
-<p>We will be writing R code to read and plot the data. The simplest way to do this is to type code in the Console and press ENTER, but instead we will write code in an R script and run code from the R script.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Instructions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li><p>Click on File &gt; New File &gt; R Script.</p></li>
-<li><p>A new R script file is opened in the Editor. Now click on File &gt; Save. Give the file the name <code>tutorial-01</code> and save it.</p></li>
-<li><p>At the top of the script, write the following code:</p></li>
-</ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="4" type="1">
-<li>Put the cursor on the line with the code and click on “Run”.</li>
-</ol>
-</div>
-</div>
-<p>The <code>library(tidyverse)</code> code will attach the necessary packages. Now we can finally read the data in R.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Instructions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>On a new line in the script, write the following code:</li>
-</ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>verb_org <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/brentari2024/verb_org.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="2" type="1">
-<li><p>Run the code as you did earlier.</p></li>
-<li><p>Now in the Environment tab you should see listed <code>verb_org</code>. Click on the name of the data to open it in the Viewer.</p></li>
-</ol>
-</div>
-</div>
-</section>
-<section id="obtain-counts-from-the-data" class="level2">
-<h2 class="anchored" data-anchor-id="obtain-counts-from-the-data">Obtain counts from the data</h2>
-<p>A very common step in quantitative data analysis is to get counts for different things in the data.</p>
-<p>The most basic count is just how many observations there are in the data: this count is simply the number of rows in the data. You can see the number of rows next to the data name in the Environment tab: they are called “observations”. The <code>verb_org</code> data has 630 observations.</p>
-<p>There is also R code that can return the number of rows/observations. This is the <code>count()</code> function.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Instructions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Add the following code to the script.</li>
-</ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">count</span>(verb_org)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="2" type="1">
-<li>Run the code</li>
-</ol>
-</div>
-</div>
-<p>Here is the code again, with the output you will see in the Console after you run the code.</p>
+<p>First, we need data and some axes.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">count</span>(verb_org)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 1
-      n
-  &lt;int&gt;
-1   630</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(verb_org, <span class="fu">aes</span>(<span class="at">x =</span> Num_Predicates))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="session-02_files/figure-html/plot-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
-<p>The number printed in the console is 630, the number of rows in the data.</p>
-<p>The <code>count()</code> function simply counts the number of rows in the data you specify within parenthesis. Here, we put <code>verb_org</code> so the function simply returns the number of rows in that data.</p>
-<p>But <code>count()</code> is not limited to that. It can also count the number of rows depending on values in columns in the data. For example, we can count the number of rows depending on the <code>Group</code> column.</p>
-<p>This column has three possible values: <code>homesign</code> (for signers that learnt signing at home), <code>NSL1</code> (for fist-generation signers that learnt from homesigners) and <code>NSL2</code> (for second-generation signers that learnt from first-generation signers).</p>
-<p>To obtain the number of rows in the data based on <code>Group</code> you can simply specify the <code>Group</code> coloumn, like so:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note the comma</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">count</span>(verb_org, Group)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3 × 2
-  Group        n
-  &lt;chr&gt;    &lt;int&gt;
-1 NSL1       237
-2 NSL2       208
-3 homesign   185</code></pre>
 </div>
-</div>
-<p>A table is printed, with two columns:</p>
+<p>To create a plot you need:</p>
 <ul>
-<li><code>Group</code> with the group value.</li>
-<li><code>n</code> with the number of rows for each group.</li>
+<li>The <code>ggplot()</code> function.</li>
+<li>The data to use as the first argument to the <code>ggplot</code> function.</li>
+<li>The “aesthetics” to include in the plot, with the <code>aes()</code> function.</li>
 </ul>
-<p>What if we want to know the number of rows per participants? There is catch with this data: the column <code>Participant</code> contains participant IDs, but alas the authors re-used IDs across groups. So there is a participant <code>1</code> for homesigners, NSL-1 and NSL-2.</p>
-<p>To be able to count the rows per <em>actual</em> participants, we need to specify both the <code>Group</code> column and the <code>Participant</code> column, like so:</p>
+<p>Here, we want an <em>x</em>-axis with <code>multiple</code> and <code>single</code> predicate numbers. Hence <code>x = Num_predicates</code> (that’s the name of the column in the data and <code>x =</code> says it has to be the <em>x</em>-axis).</p>
+<p>Write the code in your script and run it. The plot will appear in the “Plots” tab of the bottom-right panel of RStudio.</p>
+<p>Now, let’s add bars with the counts (we will split by Group later).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">count</span>(verb_org, Group, Participant)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(verb_org, <span class="fu">aes</span>(<span class="at">x =</span> Num_Predicates)) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="session-02_files/figure-html/plot-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>It’s easy! You just add <code>+ geom_bar()</code> (for bar geometry). Don’t forget the <code>+</code> at the end of the first line! Geometries are visual elements of the plots that represent data, here the counts of observations of multiple and single predicates. You don’t have to make the count yourself, <code>geom_bar()</code> counts things for you and generates the bars. The <em>y</em>-axis is the counts.</p>
+<p>So, based on the plot there are a total of a bit more than 200 multiple predicates and a bit more than 400 single predicates. This is interesting by itself: single predicates are more common than multiple predicates, overall.</p>
+<p>Now let’s split the data depending on the group of signers (home-signers, first generation, second generation). To do this, we can use “facetting”, which creates separate panels in the plot.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(verb_org, <span class="fu">aes</span>(<span class="at">x =</span> Num_Predicates)) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(Group))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="session-02_files/figure-html/plot-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The <code>facet_grid()</code> function allows you to facet the plot into panels. It takes either a <code>cols</code> argument or a <code>rows</code> argument. Here we wanted the panels to be arranged in columns, rather than rows, so we used the <code>cols</code> argument. The argument takes a column from the data to split panels by: here, we specified <code>Group</code>. Note that you need to enclose the column in the <code>vars()</code> function (don’t worry as to why).</p>
+<p>Feel free to try and use <code>rows</code> instead of <code>cols</code> and see what the difference is.</p>
+<p>We are almost there! While colour is not really necessary to distinguish multiple vs single predicates because they are already shown on the <em>x</em>-axis, colour can facilitate comparison (but don’t overdo it!). Changing colours in plots might not seem straightforward to beginners, so here you will just learn how to change the colour as per the plot above, but to really understand what the code is doing, you will have to dive in <a href="https://r4ds.hadley.nz/data-visualize">Chapter 1 of R for Data Science</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(verb_org, <span class="fu">aes</span>(<span class="at">x =</span> Num_Predicates, <span class="at">fill =</span> Num_Predicates)) <span class="sc">+</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(Group))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="session-02_files/figure-html/plot-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Colours are considered “asthetics” elements because the map data to aesthetic aspects of the plot. Here, colour is mapped into number of predicates. ggplot has default colours that are selected for you, but you can customise them. As mentioned above, customisation is not that straightforward to beginners so here I will just show you the code without going into the details. To understand in more details, you will have to learn more about ggplot2.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(verb_org, <span class="fu">aes</span>(Num_Predicates, <span class="at">fill =</span> Num_Predicates)) <span class="sc">+</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(Group)) <span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="session-02_files/figure-html/plot-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><code>scale_fill_brewer(type = "qual")</code> selects a qualitative scale from <a href="https://colorbrewer2.org/#type=qualitative&amp;scheme=Accent&amp;n=3">ColorBrewer2</a> to fill the bars. (You can check the documentation of specific functions by running the function name preceded by <code>?</code> in the console: for example <code>?scale_fill_brewer</code>).</p>
+<p>We can also customise the labels of the axes, using the <code>labs()</code> function.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(verb_org, <span class="fu">aes</span>(Num_Predicates, <span class="at">fill =</span> Num_Predicates)) <span class="sc">+</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(Group)) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>) <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Predicate type"</span>, <span class="at">y =</span> <span class="st">"Count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="session-02_files/figure-html/plot-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>To change the label of the <em>x</em>-axis, you use the <code>x</code> argument followed by <code>=</code> and a string with the text for the label: <code>x = "Predicate type"</code>. To change the <em>y</em>-axis label, you do the same but with the <code>y</code> argument.</p>
+<p>Now, the last step is to remove the legend. We don’t really need the legend because the colour doesn’t add to what we already know from the axes.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(verb_org, <span class="fu">aes</span>(Num_Predicates, <span class="at">fill =</span> Num_Predicates)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(Group)) <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="session-02_files/figure-html/plot-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The <code>theme()</code> function allows you to change some aspects of the plot, among which the position of the legend. When the position is set to <code>"none"</code>, then the legend is not shown.</p>
+<p>You might want to export the plot to include it in your dissertation or paper. You can click on the <code>Export</code> button in the Plots tab and select Image or PDF. A window opens with some settings for you to choose (ask me if you are unsure about what they do).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/plot-export.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/plot-export-save.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+<p>If you click “Save” the file is saved on the server: go to the Files tab and you should see your plot listed among the files. If you click on the plot file, the plot will be opened in the Browser and you can download it to your computer.</p>
+</section>
+<section id="practice" class="level2">
+<h2 class="anchored" data-anchor-id="practice">Practice</h2>
+<p>Now you can practice reading data in R, counting observations and plotting using a different data set: <code>coretta2022/glot_status.rds</code>.</p>
+<p>You might have noticed that the file with the data <code>glot_status.rds</code> is not a <code>.csv</code> file, but an <code>.rds</code> file. This is a special file format used with R.</p>
+<p>To read an <code>.rds</code> file you use the <code>readRDS()</code> function, like so.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>glot_status <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"data/coretta2022/glot_status.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Don’t worry about what <code>.rds</code> files actually are, just that they contain data and that you can read them with <code>readRDS()</code>!</p>
+<p>You should view the data now that it’s imported in R.</p>
+<p>Here you can find a description of the columns in the <code>glot_status</code> data: <a href="https://uoelel.github.io/qml-data/data/coretta2022/glot_status.html">Glottolog 4.6 data: Agglomerated Endangerment Status</a>. The data is a list of languages of the world with their Agglomerated Endangerment Status (an index of endangerment). This information is contained in the <code>status</code> column.</p>
+<div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 12 × 3
-   Group    Participant     n
-   &lt;chr&gt;          &lt;dbl&gt; &lt;int&gt;
- 1 NSL1               1    50
- 2 NSL1               2    62
- 3 NSL1               3    63
- 4 NSL1               4    62
- 5 NSL2               1    47
- 6 NSL2               2    45
- 7 NSL2               3    54
- 8 NSL2               4    62
- 9 homesign           1    35
-10 homesign           2    32
-11 homesign           3    57
-12 homesign           4    61</code></pre>
+<pre><code># A tibble: 8,345 × 2
+   Name                   status  
+   &lt;chr&gt;                  &lt;fct&gt;   
+ 1 Kol (Papua New Guinea) shifting
+ 2 Tanahmerah             shifting
+ 3 Touo                   shifting
+ 4 Berta                  shifting
+ 5 Siuslaw                extinct 
+ 6 Jalaa                  extinct 
+ 7 Elseng                 shifting
+ 8 Taiap                  moribund
+ 9 Pyu                    shifting
+10 Mato Grosso Arára      extinct 
+# ℹ 8,335 more rows</code></pre>
 </div>
 </div>
-<p>You can see that there are four participants in each group (participant 1, 2, 3, 4). Some participants have more observations than others.</p>
-<p>Now try it yourself, write code to get the number of rows within each group depending on the value of <code>Num_Predicates</code>. This column has two values: <code>single</code> for single predicate, and <code>multiple</code> for multiple predicates.</p>
+<p>Try to count the number of languages. The following instructions give you examples of a few things that you can count in the data but feel free to explore the data further (ask me any questions about the columns if it’s not clear what they are).</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Instructions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Count the total number of observations.</p></li>
+<li><p>Count the number of languages by status.</p></li>
+<li><p>Count the number of languages by macro-area.</p></li>
+<li><p>Count the number of languages by status, by macro-area.</p></li>
+</ol>
+</div>
+</div>
+<p>Now that you checked some counts, you can try to plot the data! If you need some inspiration and a challenge, here is a plot you could try to reconstruct yourself using what you learnt above.</p>
+<p>The following is a “stacked” bar chart. It’s stacked because the bars of different colour (i.e.&nbsp;different status) are stacked on top of each other. You can create a stacked bar chart using the <code>fill</code> argument. Can you figure out how? There are a couple hints below but feel free to ask for more directions!</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="session-02_files/figure-html/status-plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -434,78 +414,21 @@ Hint
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>You should list both columns in the <code>count()</code> function, separated by a comma.</p>
+<ul>
+<li><p><code>Macroarea</code> is the <em>x</em>-axis.</p></li>
+<li><p>The bars are <code>filled</code> by <code>status</code>.</p></li>
+</ul>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Are you sure you have tried it yourself firt?</p>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Yes, show me!
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">count</span>(verb_org, Group, Num_Predicates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 6 × 3
-  Group    Num_Predicates     n
-  &lt;chr&gt;    &lt;chr&gt;          &lt;int&gt;
-1 NSL1     multiple          45
-2 NSL1     single           192
-3 NSL2     multiple         103
-4 NSL2     single           105
-5 homesign multiple          67
-6 homesign single           118</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>So these are the count of observations by number of predicates for each group.</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 6 × 3
-  Group    Num_Predicates     n
-  &lt;chr&gt;    &lt;chr&gt;          &lt;int&gt;
-1 NSL1     multiple          45
-2 NSL1     single           192
-3 NSL2     multiple         103
-4 NSL2     single           105
-5 homesign multiple          67
-6 homesign single           118</code></pre>
-</div>
-</div>
-<p>It is interesting to note that homesigners have a higher number of single predicates cases than multiple predicate cases (118 vs 67). The difference between single and multiple predicates increases in NSL-1 signers (192 vs 45), but it drops again in NSL-2 signers, where it is basically 50-50 (105 vs 103)!</p>
-<p>Counting is a powerful statistical tool and R makes it so easy!</p>
 </section>
-<section id="next-time" class="level2">
-<h2 class="anchored" data-anchor-id="next-time">Next time…</h2>
-<p>In the next tutorial, you will learn how to plot data. You will also practice what you have learnt using new data on the endangerment status of the languages of the world!</p>
-<p>Feel free to practice more in your own time before we meet again next week.</p>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Fantastic job! You should pat yourself on the shoulders. In just two short sessions you have learnt quite a lot! Of course, to be proficient in using R for data analysis you will have to put in a lot more work (years of practice, really!).</p>
+<p>If you feel that you do want to learn more, then I recommend the <a href="https://r4ds.hadley.nz">R for Data Science</a> book. It’s great for beginners and it covers all the basics of reading, summarising and plotting data in R.</p>
+<p>It does not cover statistics per se. If you would like to learn more about statistics too, the best place is look at the materials of the <a href="https://uoelel.github.io/qml/map.html">Quantitative Methods course in LEL</a>. Of course, feel free to reach out to Stefano (s.coretta@ed.ac.uk) for further suggestions.</p>
 
 
 </section>
